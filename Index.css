@@ -1,0 +1,424 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+header {
+    margin: 0;
+    padding: 0;
+    background-color: #231e59;
+    width: 100%;
+    height: 60px;
+    padding: 5px 0px 5px 0px;
+    position: fixed;
+    z-index: 1;
+}
+.nav-bar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+.nav-bar img{
+    height: 40px;
+    margin: 5px 0px 0px 5px;
+}
+.nav-bar h2 {
+    width: 60%;
+    height: 100%;
+    color: white;
+    margin: 5px 0px 0px 7px;
+    font-family: serif;
+}
+.nav-bar ul{
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    height: 100%;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav-bar a{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+#property-owner{
+    width: 180px;
+    height: 40px;
+    font-size: medium;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+}
+.nav-icon-house{
+    color: white;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.banner-item {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    height: 30px;
+    font-size: medium;
+    background-color: #e2c297;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+#banner-agreement{
+    border-right: 2px solid grey;
+    padding-right: 20px;
+}
+.banner-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.banner-item p {
+    margin: 0;
+    font-size: 14px;
+    color: black;
+}
+.search-content {
+    text-align: center;
+    padding: 250px 20px;
+    height: 580px;
+    background-image: url("https://png.pngtree.com/background/20230527/original/pngtree-modern-highquality-exterior-render-of-a-modern-house-with-glass-windows-picture-image_2766516.jpg");
+    /* background-size: cover; */
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    position: relative;
+    top: 60px;
+}
+.search-content h2{
+    font-size: 70px;
+    font-family: cursive;
+    font-style: italic;
+}
+h2 {
+    font-size: 2em;
+    color: white;
+}
+.search-tabs nav {
+    margin: 20px 0;
+}
+.search-tabs nav a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1em;
+}
+.search-tabs .active {
+    border-bottom: 3px solid #d32f2f;
+}
+.search-bar {
+    display: inline-block;
+    background-color: white;
+    margin-top: 20px;
+    padding: 5px;
+    padding-left: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+}
+.location, .BHK_Type{
+    padding: 5px;
+    margin: 5px;
+    font-size: 1em;
+    border: none;
+    border-right-style: solid;
+    border-right-color: #ddd;
+    border-right-width: 2px;
+    border-radius: 0px;
+}
+.Availability{
+    padding: 5px;
+    margin: 5px;
+    width: 120px;
+    font-size: 1em;
+    border: none;
+    border-radius: 0px;
+}
+.search-bar button{
+    padding: 10px;
+    margin: 5px;
+    width: 140px;
+    font-size: larger;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+}
+.search-bar input[type="text"] {
+    width: 150px;
+}
+.search-bar select {
+    width: 120px;
+}
+.search-bar .search-btn {
+    background-color: #231e59;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.search-bar .search-btn:hover {
+    background-color: rgb(209, 155, 56);
+}
+
+/* Hidden Section for cards */
+
+:root {
+    --star-size: 20px;
+    --star-color: #fff;
+    --star-background: #fc0;
+}
+.Stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    
+    display: inline-block;
+    font-size: var(--star-size);
+    font-family: Times;
+    line-height: 1;
+    
+    &::before {
+        content: '★★★★★';
+        letter-spacing: 3px;
+        background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.rajpura-cards{
+    margin-top: 5%;
+    /* margin-left: 2%; */
+    display: none;
+}
+
+
+.service-section{
+    padding-bottom: 4px;
+    background-color: #fff;
+    position: relative;
+    top: 60px;
+}
+.services {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px 0px 10px 0px;
+    height: 160px;
+    background-color: #fff;
+}
+.service-heading,
+.features-heading {
+    background-color: #231e59;
+    color: white;
+    font-size: large;
+    margin-top: 5px;
+    text-align: center;
+    font-family: fangsong;
+}
+.service-heading span,
+.features-heading span {
+    display: flex;
+    flex-direction: row;
+ }
+ .service-heading span:before,
+ .service-heading span:after,
+ .features-heading span:before,
+ .features-heading span:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 3px solid orange;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+ }
+.service {
+    text-align: center;
+    padding-top: 25px;
+}
+.service img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.service h3 {
+    margin: 5px 0;
+}
+.why-use {
+    padding: 30px 0px 40px 0px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    top: 60px;
+}
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 0px 20px;
+}
+.section-enquiry {
+    padding: 25px 20px 40px 20px;;
+    text-align: center;
+    background: radial-gradient(
+    circle, rgba(0,0,139,1) 0%,
+    rgb(17 17 58) 70%);
+    color: white;
+    position: relative;
+    top: 60px;
+}
+.section-enquiry h2{
+    text-decoration: underline rgb(209, 155, 56) dotted 7px;
+}
+.enquires{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.enquires img{
+    height: 270px;
+    width: 420px;
+    border-radius: 10px;
+    border: 2px solid rgb(209, 155, 56);
+}
+.enquiry button{
+    background: rgb(209, 155, 56);
+    width: 180px;
+    height: 50px;
+    font-size: x-large;
+    font-family: cursive;
+    border-radius: 30px;
+}
+.enquiry button:hover{
+    /* background: #2e78da; */
+    background: #e2c297;
+}
+.enquiry button a{
+    text-decoration: none;
+    color: black;
+}
+.footer{
+    margin: 0;
+    margin-top: 2px;
+    padding: 20px;
+    width: 100%;
+    height: 190px;
+    color: white;
+    background: radial-gradient(circle, rgba(0,0,139,1) 0%,
+    rgb(17 17 58) 70%);
+    position: relative;
+    top: 60px;
+}
+.footer-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 5px outset rgb(209, 155, 56);
+}
+.footer-nav li{
+    list-style-type: none;
+    height: 35px;
+}
+.footer-nav a{
+    text-decoration: none;
+    color: white;
+}
+.footer-tags ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+.footer-tags li{
+    list-style-type: none;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    background: rgb(209, 155, 56);
+    border: 2px solid rgb(209, 155, 56);
+    border-radius: 50%;
+}
+.footer-tags a{
+    text-decoration: none;
+    color: white;
+}
+.footer-icons{
+    font-size: 30px;
+    margin-left: 8px;
+}
+.footer-tags p{
+    text-align: center;
+    font-size: medium;
+}
+
+
+/* ... (existing styles) ... */
+
+
+main {
+    width: 100%;
+}
+/* Responsive adjustments */
+ @media (max-width: 768px) {
+    /* Tablet and mobile view  */
+    .search-content {
+      padding: 50px;
+      height: auto; /* Adjust height based on content */
+      width: 100%;
+    }
+    .search-bar {
+      flex-direction: column; /* Stack elements vertically */
+      input[type="text"], select {
+        width: 100%;
+      }
+    }
+    .banner-item {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+    .services {
+      flex-direction: column;
+      width: 100%;
+    }
+    .rajpura-cards .container .row {
+        flex-wrap: wrap; /* Allow cards to wrap to the next line */
+      }
+      .rajpura-cards .container .col-3 {
+        width: 50%; /* Adjust the width of each card */
+        margin-bottom: 20px; /* Add some margin between cards */
+      }
+  }
+  .row{
+    margin-top: 80px;
+}
+  
+  @media (max-width: 480px) {
+    main{
+        width: 630px;
+    }
+    .search-content h2 {
+      font-size: 40px;
+      width: 100%;
+      .rajpura-cards .container .col-3 {
+        width: 100%; /* Make each card full-width */
+      }
+    }
+    .row{
+        margin-top: 80px;
+    }
+    footer{
+        width: 630px;
+    }
+  }  

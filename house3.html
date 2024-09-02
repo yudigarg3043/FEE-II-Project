@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="house3.css">
+</head>
+<body>
+<!-- NavBar -->
+<header class="header m-0 pt-1">
+    <nav class="nav-bar text-white d-flex flex-row justify-content-around">
+        <img src="logo.png" alt="Logo" class="mt-2"><h2 class=".text-white mt-2">RentalHub</h2>
+        <ul class=" m-0 p-0 fs-4 d-flex flex-row align-items-center justify-content-around" id="down-navbar">
+            <li><i></i>Pay Rent</li>
+            <li><button id="property-owner" class=" text-black bg-white h6">For Property Owners</button></li>
+            <li><a href="login.html">Log in/Sign up</a></li>
+        </ul>
+    </nav>
+</header>
+
+     <div class="boxs1 bg-white m-auto p-2">
+        <h2>Glance of the Place</h2>
+        <p><strong>Rs. 7000</strong>    <span style="color: grey;">see other charges  <i class="bi bi-info-circle"></i></span></p>
+        <p><i class="bi bi-geo-alt-fill"></i>Deep Singh Colony, Rajpura, Punjab</p>
+        <div class="main d-flex flex-row align-items-center justify-content-around">
+            <div class="container1">
+                <div class="box1"><img src="https://img.staticmb.com/mbphoto/property/cropped_images/2024/Jul/08/Photo_h300_w450/73710311_5_PropertyImage169-46241947882058_300_450.jpg" alt="img" height="360px" width="458px"></div>
+                <div class="box2"><img src="https://img.staticmb.com/mbphoto/property/cropped_images/2024/Jul/08/Photo_h300_w450/73710311_2_PropertyImage810-8311762113709_300_450.jpg" alt="img" height="175px" width="225px"></div>
+                <div class="box3"><img src="https://img.staticmb.com/mbphoto/property/cropped_images/2024/Jul/08/Photo_h300_w450/73710311_5_PropertyImage169-46241947882058_300_450.jpg" alt="img" height="175px" width="225px"></div>
+                <div class="box4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQyYxzxibfogS3mLdGY2353a4YXH8HGmDsEg&s" alt="img" height="175px" width="225px"></div>
+                <div class="box5"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2RxAz4yzcRzir1o28j1gYibg3OWL0JrOP5w&s" alt="img" height="175px" width="225px"></div>
+                <div class="box6"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMDZKHpPJPXPSwNN9VEfQ47UffRK6nB-0C-Q&s" alt="img" height="175px" width="225px"></div>
+            </div>
+            <div class="container2">
+                <div class="icons">
+                    <ul class="m-0 p-0 d-flex flex-row justify-content-around">
+                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAYFBMVEX///8AAADu7u5/f3/Hx8fPz89hYWH19fWYmJiioqL4+PiHh4dmZmbg4OCUlJS+vr5cXFyxsbE/Pz92dnYZGRkkJCQ4ODiqqqoeHh5vb28xMTFXV1fa2tro6Oi4uLhLS0u/QhK/AAADHElEQVR4nO2b4bqiIBBARUMNQy1TK+P2/m+5e28xYCGyprjtzvnpN8r5QGUGNAgQBEEQBEEQBEEmwXhbnsjCnMqWM3cnvltaSLLjrt109qX0zdmps5LYpxMhceLgdPHrRMhl1IpVvp0IqcZGsPDvREgxInVYQ+pgd9qryFMXL0qnvQj3VqkI4iKRLIzQGrM5hfDotSPDPAutbO0SWqKEjKp9OAVBLdsTliAugzI/UplszzbbUBm09SO1le1RlEIplEKpf1eKcfqKeErRmDAEDZQtb0td06Fc65LRR5uMZkPZ9CG9zi4l7Gly/HNVaq85qpdp9z2prbkZvUXmkN4PXnaKVGZuo0fsUpo9ZR/vSM1Y4VRzSbXm60+jl9JOl+Lmq09Fz+emS81cnuoDOFmKHuF6dZW9EjX9RpvIEFRBNk6OmsBkKXVHxeZMOuw9m5m5MOHq2dTuqslSpTx2HjwtVU7pYBAsMJXvSzFoz1IGwQgfh2OgfCNqHpwqFcLgWc7LZVBuCYIBVAM8VYq7tPclg75czNWtuagULCDZFnVQCqVQ6mOl1PwEL+LhCSQINjJoYwmCyUhNDa2L1FUG7VIJzLZlOgxkN5UlCCbRDA7BHpCh0pGdUnRkJbrCPLOyvBk/eTma3FCvtovv741xel6RZtH4ScsT9TpLrDpyika7s8LVbvBnOsi12G1tF8VNjmA6HuuPxzua6sfKfF9svFLs81I3uL/ctWWnA3XY0J2fhGoOt6eOsk1vC5P2u0pV5Z4WOs2oFbDfdT2HgtrTztUQMPPXXI1ebdtz84CA3qFudaQXNBNIaVy/OlkMyHF38EI42LZxvRCCCqxNdKu8oXQSOQMfA+izP/iUaRkY3EkohVIohVIohVIohVIohVIoRUgswpUR8YvU3wRKuYJSrgTleIxvynX+tLBTuHzZ5pmfVU6aRhJ4p3aRF2CnYweH0pf9yE/8+BSlUAql/i8p+FzD/hvZbMBPcrYtGPaYnmtP2w9yt6q0Fgj8vu0+9mvibNzTgWakD3gkv3j3w/d39dHq20IIgiAIgiAIgnwevwArrj7I76Ij2gAAAABJRU5ErkJggg==" alt="bed icon">2 Beds</li>
+                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAY1BMVEX///8AAABERES3t7fv7+/BwcFsbGzLy8t4eHg/Pz/o6OhjY2P19fX7+/tdXV0NDQ2GhobX19czMzOZmZkfHx9JSUmlpaXf399+fn45OTlVVVUnJyewsLCfn5/R0dEZGRmPj4//gIzQAAAFAklEQVR4nO2c7ZaiMAyGF0FhEARHkFHGj/u/ynXGvFCgtmGV1D2H998CQ58tbZq0iX/+CCitltdNnWVFmfvbRKJFu5ab2mu1ObnmuWnpDXRy3Fvpash0663KJdP2U8d009IhU/2AyfO+35DJWV+lHwrD5VAeD4Vyodg6gcpbgsgPfjHDPGuufbpg2jbNl2F7NV43l/cOoI5ofJ12ru+arorFmUK0veqbyqu7rkLTWTq4BYNaSDMFmHr+8F6MrpI27BW1e9Stc1+Ovt83tbvT3cTEjIShctMXwrddC7sLG4LSNpuSsSoDWaiSoPR3o/vND2FLtZih/mOo9EBQ+qHsACreK57U5aRxnMSh0l3PMc/yQdvSUN+eRv1YTxYqveqYBrZbFCrd6Jk879BpXxTq6xHTbUlR+0oSqsNUHA6dEOuoeHuCUGcFIQ+rOI7PpzZ6UUe7HFQMg+lddm2v+G13tQZLDmqPxutQvVw1Yc2XAyi0/dl37ODGtB6fGJSPpsP+nerQ7yoxKARO+fAWNs6aSF0KKiZnpaiSoWg1vGCoS0HBHhSLoUrMQMRUUlDNkDLpKgx14kBhpEtB7cw4d63SN4SKhKHOZpy7sP0qZqcYXbXGs3LLTLham9VuUzuK+8yaobiaobiaobiaobiaobiaobiaobiaobiaobiaobiaobiaobiaobiaobgaARXm0UpG2C1e3/8Z5YO997viB8eHUrpqeq0q7X83rcpBWkxo/6Pp1fuG1aPMVVH1TprW9r+Q0Fpl2tqfl5GaVxE1VzUHKwJqmldSzxLMvCgOnChGryhH8hjmxwdGVUB0pKsM9fPlfkmb1CcjOhm4nJsrSNG+OmNCqmrdjnSc3WfOsvwrSl9Qk09wSF+ffCc64eRUHdWsA0QJqSlNgWsYqJMs9yZd1c39St9i8etl078FVZ/pJ73PNdNumE1/s1Z5mdn/dBpl5TDDkZTgGy7FRA2acsAxCcXqbODImcrrAC5WksRp8MwAf6nwac6GZ1CmIVZ7AOfOFCkHNP1WUlCUCJaZygoS8pY3OpMxgZBAuzAVYKCYUqogIqDgYGXsBEppHeQfTiQEB1/Gpziz4YXizXbkjwoZKpgpc/kTnhIqM/1m9cE2E7WeNFoy87IWF6KGiiZ7YdllpLCilIEii1BbHqPaEqEaRfouH5bH4FGJMCEve215DAUBIoV3icexna2hErGesJ22Kk0YKk356euFdGObqYZ/KrIrhADK5n2LunkcF+8Xqha0nmQ7axtUQrtCG4Hpl5CLpy1VVgU3byFw6IUCBLOL9yOqH64F3LyKhoqmUqMnzAgBQwUzZZ/pgm4ez8X7Uch+8mnh///gAFIR9mkFrCeNFMaedEIb/QKnD2R9Lgzrg585mR6KGuL4brD9k38/zHPOioYII7OPv6cUYtuQEzkFzcmtP+FSkzRVUp+sLYL2h2vKqx9OIv/anu3b7fmPAtHtWOMukCJtIfhUYsfiglvqI+a4ofD6tbLFMR2xKgif18jwpIomH+5ZNN5nO58W9hf/uxanf/PY0iTonov4dNZ85B9z0KJ78LunHkHyxFYvFsL7K1JqYkT8RS+gXwBIvdEvMEBtfnUkt8bu6UOIQy7H+xteCtXVeKieZigZKL1pHz/QexplyAfS/O6lN2rB0i+jT8Zvuu63bVF29KF5wbO7J8m+6L0x2406TQp2/fWq2Ns82r8fRUvNuQ44egAAAABJRU5ErkJggg==" alt="bath icon">1 Bath</li>
+                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAY1BMVEX///8AAACWlpZCQkLw8PBQUFD29vbp6emFhYUJCQnZ2dmIiIj6+vo2NjbV1dUYGBizs7PAwMC5ubmdnZ0tLS3IyMgmJiZ8fHzi4uIfHx+qqqo7OztKSkpsbGzOzs5gYGB0dHT7c9VsAAAESElEQVR4nO2cbZeyIBCGWfOl1CzfzTL7/7/ykUFrLRjcXaTOeeb+su1Aeh0ZGBwgxkgkEolEIv1UbpIec2dQfkwT9900jMVBWl+Kw9ddh+JSp0H8RqSg7b6k6to3PbA4vB3kSFynOnzD47rWaiKh29UyUvMNqfBueZbzT8OfziseJXVjk+l4ujt2lMKdU/5Pyj+F2XZ3b8SjNSS3H+9ZdeVke0ANistuou4tefz1PN4wCh/GGdSgZGrfsxXPyqZuH3y3PkMNbjcNF9n6TPl4q3RufoV64OeWmOrnQUgGxdybFap29KaXAikUY5Go367JlIp7lIqSV6ipCSUlptQclJ6rghqf7WG1YTQWg4+0jyuhWCmG0bUiYYR4rRpq7BuvbmhEKdaTECjmrOdW8Z5f+qIoxaAYhID9Gg0IrVCoHBaFak4rjVZBhQ44KJToglWgKv61wMs3ymIcikHTO6aZ3Aq/qwYKiivT0xhogF5droFi/QrRJu4V4WUpFJT3ZjtgCKMyUkEHxaADmg02jq5Pa6Fy86PChQfV5C9QCQ/mnkkmGKQ8zCO0ULFneqhKtSG1VM4fJkWmAyA4RB9tlYqgd3baGiadSvuKvlS1OSbfMwXl+cagRIwxIYORxuXX2x1Q8Sp4DcgwGIa6JYhCMTaGWJ2bWaiAXw6feGjHqTEqmBuoPhKqMQdlLiQTFEERFEERFEERFEERFEH9x1DwioWnASDBgWT62JiQ+PUrlpu00UyQSvAiTJC+6NEq8O5fz23t0m0oLc+QWdNlSXY2OOsvZFZn7buga51poNI14ZT02VnReDNNKlSsrlZZElpRkokkE7pLwIdOdNO1sUHFkIvpsVwaZDIO5rJtC+RDG2K+fuUVVt/bMBeMqVheudQ2sHmBG2OxAKBW3dnwqlYHBZFXtUy8kiB+YHHav1h3KnCpC9q3xB6C2vUtyRXLBvhj8McddfuNFe3F3QrNIHQ1FdB+Inwexu4bf2xqwdJW2OsvY1J9qGcaVObQ1ud5+1cSG3jgk//Bd4u5DeZDlcS2z7VNd9eWfyFh8TeJeX84tx25LZPYjnMbrIs7c1vCbdvFSCPU02N1JLYRaqZMQM0EULnE9nYoR2IjKIIiKIIiKIIiKIIiKIIiKIIiqF9B/fW9D7bUPmXXcokNAGTn155AGwkU2BafpokTB/IGxX6mk8QG9SqZ7TyzQc7htH+1FU6yaON8ozhbvJa6BeuSn5ifSnb6i5jWDtt9P8gXh+VOniWJc3CahZcxOxy6lhQuyA77G17F6pIDLDhssEcFY4f6bNMqgueA9cCPXJuRjcZrSxYVZoLUvvHDZbggpmLrfWJl1OqvL4jTsdjKqDgH1llcr/UhqHXoc4C5yNcmC+yoyaDvPc90nmV5DUQIOTcIat6xg0M7TwiMHdxZKm/BuQe/LSzOFHZFu6xb+SX8yI4N5aXVnRkkEolEIn2o/gEloWnMBaYjgQAAAABJRU5ErkJggg==" alt="balcony icon">1 Balcony</li>
+                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAACUCAMAAAD26AbpAAAANlBMVEX///8AAACWlpa1tbXz8/N4eHjU1NRvb29UVFRKSkrf39+jo6NBQUEVFRWEhIQcHBwuLi7GxsaExYK5AAABdUlEQVR4nO3c626CMBiA4UqxxX6AcP83OzCAjoHrMumBvG/iv4bwRMohgSpFFKnyyIIIzOXIDAQIEMIRnL0el3UhCESfy4n2apydxm+oBJ4G2vMEUwxjC8+xGgIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIBwYkJnqx+EynYZETpRzq4I1im550OohhH9ijC+sXrLi2DyJtx2CHXyhHsxpXcIMg9oUiXI64gtwpKkSvj2RddbQpkqwf9f2LzapUBo2ulQlx3CPBfaZOfCUr5npKUTXBcgQIBwKsL6ZrvPi9C0ytQrQm3U9hUtTcJw0zrt7cuDZ/P+mS05wly+j/8QIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIEAIlfNbwVyPK5h7rnauWfSfsk3bsf8dwu6xjcAz+dnGtxV/7vlGbpQ+R5DfBx4ThEcnIPRx54Iqp1/sbVD0vgD7vDTTSWGs1QAAAABJRU5ErkJggg==" alt="almirah icon">Furnished</li>
+                    </ul>
+                </div>
+                <div class="details">
+                    <div class="detail1"><h5>Carpet Area</h5><p>180 Sqft</p></div>
+                    <div class="detail1"><h5>Floor</h5><p>2(Out of 3)</p></div>
+                    <div class="detail1"><h5>Furnished Status</h5><p>Furnished</p></div>
+                    <div class="detail1"><h5>Age of Construction</h5><p>New Construction</p></div>
+                    <div class="detail1"><h5>Status</h5><p>Immediately</p></div>
+                    <div class="detail1"><h5>Additional Rooms</h5><p>1 Store Room</p></div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="boxs2 bg-white m-auto" id="boxs2">
+        <h3>More Details</h3>
+        <p><span style="color: grey;">Ratings:</span><div class="Stars" style="--rating: 3;"></div></p>
+        <p><span style="color: grey;">Rental Values</span> &emsp; Rs. 7,000</p>
+        <p><span style="color: grey;">Security Deposit</span> &emsp; Rs. 7,000</p>
+        <p><span style="color: grey;">Address</span> &emsp; Deep Singh Colony , Rajpura, Punjab</p>
+        <p><span style="color: grey;">Landmark</span> &emsp; Rajpura Khurd</p>
+        <p><span style="color: grey;">Furnishing</span> &emsp; Furnished</p>
+        <p><span style="color: grey;">Carpet Area</span> &emsp; 180 Sqft</p>
+        <p><span style="color: grey;">Floor</span> &emsp; 2(Out of 3)</p>
+        <p><span style="color: grey;">Car Parking</span> &emsp; 1 Covered, 1 Open</p>
+        <p><span style="color: grey;">Flooring</span> &emsp; Wooden, Ceramic Tiles, Marbel, Granite, Marbonite</p>
+        <p><span style="color: grey;">Overlooking</span> &emsp; Garden/Park, Main Road</p>
+    </div>
+    <div class="boxs2 bg-white m-auto">
+        <h3>Agent Details</h3>
+        <div class="bx1 d-flex flex-row">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUuR6lY1HPFS4Q_R2A5r70ECdchXmR_n1b8g&s" alt="" height="150px" width="150px">
+            </div>
+            <div>
+                <div>
+                    <p><strong>Mohammad Shahid</strong>    |    4500+ Buyers Served</p>
+                    <p>Urban Estate </p>
+                </div>
+                <hr>
+                <div class="bx1 d-flex flex-row">
+                    <div>
+                        <p style="color: grey;">Operating In</p>
+                        <p><strong>C20, Tanwar Market, Behind CNG Station, Rajpura......, New Delhi, Delhi NCR, India</strong></p>
+                    </div>
+                    <div class="bx2 ms-3 p-1">
+                        <p style="color: grey;">Operating Since</p>
+                        <p><strong>2011</strong></p>
+                    </div>
+                    <div class="bx2 ms-3 p-1">
+                        <p style="color: grey;">Properties for Sale</p>
+                        <p><strong>45</strong></p>
+                    </div>
+                    <div class="bx2 ms-3 p-1">
+                        <p style="color: grey;">Properties for Rent</p>
+                        <p><strong>7</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="boxs2">
+        <p><strong>Disclaimer:</strong> Magicbricks has endeavoured to ascertain the requirement of RERA registration. However, the advertiser claims that there is no requirement for such registration.</p>
+        <center><button class="btn btn-danger fs-5" style="border-radius: 20px;"><a href="contact.html">Contact US</a></button></center>    
+    </div>
+
+    <footer>
+        <!-- Footer -->
+                <div class="footer">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="terms.html">Terms & Condition</a></li>
+                            <li><a href="review.html">Testimonials</a></li>
+                            <li>Sitemap</li>
+                            <li><a href="FAQS.html">FAQs</a></li>
+                        </ul>
+                    </div>    
+                <div class="footer-tags">
+                    <ul>
+                        <li><a href="https://www.facebook.com/TheRentalHub"><i class="bi bi-facebook footer-icons"></i></a></li>
+                        <li><a href="https://x.com/rentalhub_"><i class="bi bi-twitter footer-icons"></i></a></li>
+                        <li><a href="https://www.instagram.com/rentalhub/"><i class="bi bi-instagram footer-icons"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/rentalhub-llc/"><i class="bi bi-linkedin footer-icons"></i></a></li>
+                        <li><a href="https://www.youtube.com/@the_rental_hub_official"><i class="bi bi-youtube footer-icons"></i></a></li>
+                    </ul>
+                    <p>&copy 2023-24 RentalHub Technologies Solution Pvt. Ltd.</p>
+                </div>
+            </div>
+            </footer>
+</body>
+</html>

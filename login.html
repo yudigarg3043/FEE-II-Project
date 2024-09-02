@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/8f1d1b3903.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(to right,rgb(8, 8, 8),rgb(7, 23, 75));
+    
+}
+.container{
+    display:Flex;
+    flex-direction: row;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 110px;
+    height:500px;
+    box-shadow: 10px 10px 20px rgba(216, 203, 203, 0.5); 
+}
+.box11{
+    width:50%;
+    height:500px;
+    background-image:linear-gradient(to right,rgb(17, 18, 16),rgb(3, 44, 78));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    
+}
+.box22{
+    width:50%;
+    height:504px;
+}
+#para1{
+   margin-left: 70px;
+   margin-top: 100px;
+   color:whitesmoke;
+   font-size: 30px;
+   font-style: normal;
+   font-weight: 400;
+}
+#para2{
+    margin-left: 600px;
+    margin-top: 30px;
+    color:whitesmoke;
+   font-size: 30px;
+   font-style: normal;
+   font-weight: 400;
+}
+#para5{
+    margin-top: 10px;
+    font-size: 17px;
+    
+    font-weight: bold;
+    font-style: normal;
+    font-variant: normal;
+    font-display: 5px;
+    color:rgb(123, 9, 33);
+}
+#para6{
+    margin-top: 10px;
+    margin-left: 90px;
+    font-size: 17px;  
+    font-weight: bold;
+    font-style: normal;
+    font-variant: normal;
+    font-display: 5px;
+    color:rgb(241, 226, 229);
+}
+#button1{
+    margin-left: 70px;
+   margin-top: 30px;
+   width:140px;
+   height:40px;
+   border-radius: 30px;
+   cursor: pointer;
+   color:black;
+   font-size: 20px;
+   font-weight: bold;
+    font-style: normal;
+    font-variant: normal;
+    font-display: 5px;
+}
+#button5{
+    margin-top: 10px;
+    margin-left: 80px;
+    width:115px;
+    height:35px;
+    background-image:linear-gradient(to right,rgb(220, 231, 224),rgb(10, 10, 0));
+    font-weight: bold;
+    font-style: normal;
+    font-variant: normal;
+    font-display: 5px;
+    border-radius: 10px;
+} 
+#button6{
+    margin-top: 10px;
+    margin-left: 30px;
+    width:115px;
+    height:35px; 
+    background-image:linear-gradient(to right,rgb(220, 231, 224),rgb(10, 10, 0));
+    font-weight: bold;
+    font-style: normal;
+    font-variant: normal;
+    font-display: 5px;
+    border-radius: 10px;   
+}
+.container1 {
+    width: 520px;
+    height:499px;
+    background-image:linear-gradient(to right,rgb(17, 18, 16),rgb(3, 44, 78));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    padding: 20px;
+}
+.toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.toggle button {
+    background-image:linear-gradient(to right,white,rgb(3, 25, 52));
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    color: #cab6b6;
+}
+.toggle button.active {
+    color: #140202;
+    border-bottom: 2px solid #100101;
+}
+.form-container {
+    position: relative;
+}
+form {
+    display: none;
+}
+form.active {
+    display: block;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-variant: normal;
+    font-display: 10px;
+    color:rgb(233, 236, 241);
+}
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #f5fbfc;
+}
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #140101;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+form button:hover {
+    background-color: #555;
+}
+#loginBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #f5f1f1;
+    background-color: #f5eeee;
+    border: 2px solid #030614;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #172835;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-right: 8px;
+    border-radius: 40px;
+  } 
+#loginBtn:hover {
+    background-color: #fff;
+    color: #edf1f4;
+    border: 2px solid #413939;
+    box-shadow: 5px 5px 0px #272525;
+  }
+#loginBtn:active {
+    background-color: #f0eec9;
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+  #signupBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #f5f1f1;
+    background-color: #f5eeee;
+    border: 2px solid #030614;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #172835;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 40px;
+  }
+#signupBtn:hover {
+    background-color: #fff;
+    color: #edf1f4;
+    border: 2px solid #413939;
+    box-shadow: 5px 5px 0px #272525;
+  }
+#signupBtn:active {
+    background-color: #f0eec9;
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+#submit{
+    background-image:linear-gradient(to right,white,rgb(249, 244, 227));
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-variant: normal;
+    font-display: 5px;
+    color:rgb(16, 42, 158)smoke;  
+    border-radius: 10px;
+    width:150px;
+    margin-left: 150px;
+    margin-top: 25px;
+    border-radius: 40px;
+}
+#loginEmail{
+background-image:linear-gradient(to right,white,rgb(252, 250, 245));
+cursor:pointer;
+border-radius: 40px;
+}
+#loginPassword{
+background-image:linear-gradient(to right,white,rgb(252, 247, 226));
+cursor:pointer;
+border-radius: 40px;
+}
+#signupEmail{
+    background-image:linear-gradient(to right,white,rgb(252, 250, 245));
+    cursor:pointer;
+    border-radius: 40px;
+}
+#signupPassword{
+    background-image:linear-gradient(to right,white,rgb(252, 250, 245));
+    cursor:pointer;
+    border-radius: 40px;
+    color: #5f0c0c;
+}
+#confirmPassword{
+    background-image:linear-gradient(to right,white,rgb(252, 250, 245));
+    cursor:pointer;
+    border-radius: 40px;
+    color: #5f0c0c;
+}
+#box{
+    margin-left: 46px;
+}
+#g1{
+    margin-top: 20px;
+    /* border-radius: 20px; */
+    width:180px;
+    height:40px;
+    color: #5f0c0c;
+    background-image:linear-gradient(to right,rgb(181, 151, 80),white);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: normal;
+    font-display: 5px;
+}
+#g2{
+    margin-top: 20px;
+    /* border-radius: 20px; */
+    width:400px;
+    height:100px;
+    background-image:linear-gradient(to right,rgb(181, 151, 80),white);
+    
+}
+#g3{
+    color:#5f0c0c;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: normal;
+    font-display: 5px; 
+}
+.fa-google{
+    color:rgb(148, 41, 41)
+}
+.fa-facebook{
+    color:blue;
+}
+.fa-solid{
+    color:rgb(102, 12, 12);
+    size:35em;
+}
+#p1{
+    margin-left: 15px;
+    margin-top: 10px;
+    color:#a1e0ed;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: normal;
+    font-display: 5px;
+
+}
+fa-brands{
+    color:white;
+}
+fa-g{
+    color:white;
+}
+#button1 {
+  font-family: sans-serif;
+  background-color: #efefef;
+  color: rgb(3, 44, 78);
+  border: none;
+  border-radius: 8px;
+  width: 120px;
+  height: 45px;
+  transition: .3s;
+}
+#button1:hover {
+  background-color: rgb(3, 44, 78);
+  box-shadow: 0 0 0 5px rgb(3, 44, 78);
+  color: #fff;
+}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box11">
+     <p id="para1">Plan Your next Dream House<br>
+        Select your destination and<br>
+        leave the rest to us.</p>
+    <button id="button1"><a href="about.html" style="text-decoration: none;">About Us</a></button>
+    </div>
+    <div class="box22">
+        <div class="container1">
+
+            <div class="toggle">
+                <button id="loginBtn" class="active">Log In</button>
+                <button id="signupBtn">Sign Up</button>
+            </div>
+            <div class="form-container">
+                <form id="loginForm" class="active" style="margin-top: 50px;">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required style="margin-top: 10px;">
+                    <label for="loginPassword"><br>Password</label>
+                    <input type="password" id="loginPassword" required style="margin-top: 10px;">
+                    <button type="submit" id="submit">Log In</button>
+                    <h5 style="color: white; font-size: 18px;">
+                        <br><br>Don't Have An Account! 
+                        <u id="toggleToSignUp" style="cursor: pointer;">Sign Up?</u>
+                    </h5>
+                </form>
+                <form id="signupForm">
+                    <label for="signupEmail"><br>Email</label>
+                    <input type="email" id="signupEmail" required style="margin-top: 10px;">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required style="margin-top: 10px;">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" required style="margin-top: 10px;">
+                    <button type="submit" id="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        </div>
+        </div> 
+        <script>
+    document.getElementById("loginBtn").addEventListener("click", function() {
+    document.getElementById("loginForm").classList.add("active");
+    document.getElementById("signupForm").classList.remove("active");
+    this.classList.add("active");
+    document.getElementById("signupBtn").classList.remove("active");
+});
+document.getElementById("signupBtn").addEventListener("click", function() {
+    document.getElementById("signupForm").classList.add("active");
+    document.getElementById("loginForm").classList.remove("active");
+    this.classList.add("active");
+    document.getElementById("loginBtn").classList.remove("active");
+});
+document.getElementById("toggleToSignUp").addEventListener("click", function() {
+    document.getElementById("signupForm").classList.add("active");
+    document.getElementById("loginForm").classList.remove("active");
+    document.getElementById("signupBtn").classList.add("active");
+    document.getElementById("loginBtn").classList.remove("active");
+});
+        </script>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="house2.css">
+</head>
+<body>
+<!-- NavBar -->
+<header class="header m-0 pt-1">
+    <nav class="nav-bar text-white d-flex flex-row justify-content-around">
+        <img src="logo.png" alt="Logo" class="mt-2"><h2 class=".text-white mt-2">RentalHub</h2>
+        <ul class=" m-0 p-0 fs-4 d-flex flex-row align-items-center justify-content-around" id="down-navbar">
+            <li><i></i>Pay Rent</li>
+            <li><button id="property-owner" class=" text-black bg-white h6">For Property Owners</button></li>
+            <li><a href="login.html">Log in/Sign up</a></li>
+        </ul>
+    </nav>
+</header>
+
+     <div class="boxs1 bg-white m-auto p-2">
+        <h2>Glance of the Place</h2>
+        <p><strong>Rs. 8000</strong>    <span style="color: grey;">see other charges  <i class="bi bi-info-circle"></i></span></p>
+        <p><i class="bi bi-geo-alt-fill"></i>Dhakansu Majra, Rajpura, Punjab</p>
+        <div class="main d-flex flex-row align-items-center justify-content-around">
+            <div class="container1">
+                <div class="box1"><img src="https://img.staticmb.com/mbphoto/property/cropped_images/2024/Jun/30/Photo_h300_w450/73581795_3_1719742022549-24490_300_450.jpg" alt="img" height="360px" width="458px"></div>
+                <div class="box2"><img src="https://img.staticmb.com/mbphoto/property/cropped_images/2024/Jun/30/Photo_h300_w450/73581795_4_1719742022560-9123_300_450.jpg" alt="img" height="175px" width="225px"></div>
+                <div class="box3"><img src="https://img.staticmb.com/mbphoto/property/cropped_images/2024/Jun/30/Photo_h300_w450/73581795_5_1719742022564-0924_300_450.jpg" alt="img" height="175px" width="225px"></div>
+                <div class="box4"><img src="https://img.staticmb.com/mbphoto/property/cropped_images/2024/Jun/30/Photo_h0_w320/73581795_1_1719742022557-6772_0_320.jpg" alt="img" height="175px" width="225px"></div>
+                <div class="box5"><img src="https://img.staticmb.com/mbphoto/property/cropped_images/2024/Jun/30/Photo_h0_w320/73581795_2_1719742022554-21481_0_320.jpg" alt="img" height="175px" width="225px"></div>
+                <div class="box6"><img src="https://img.staticmb.com/mbphoto/property/cropped_images/2024/Jun/30/Photo_h0_w320/73581795_5_1719742022567-4935_0_320.jpg" alt="img" height="175px" width="225px"></div>
+            </div>
+            <div class="container2">
+                <div class="icons">
+                    <ul class="m-0 p-0 d-flex flex-row justify-content-around">
+                        <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8AAADq6up8fHy4uLisrKzx8fGenp7l5eVsbGwRERHt7e1bW1shISF6enqtra0WFhb5+fljY2NJSUk3NzdAQEAcHBxdXV1QUFDZ2dlycnLJycm7u7skJCTDw8OcnJwtLS2QkJCIiIja2tozMzNERESjnBVTAAADgklEQVR4nO3cfV+qMBjGcSUFxcjmQz6XVuf9v8XjPcyGeQJyu6Hz+X3/wxj3rgTFOdfpAAAAAAAAAAAAAAAAAAAAAAAAAAB+k1Vv3A9t3Fs1FW8z7GpZbBvIt1qq5ROzZ+2AL6r5xINuwAf1gN3uUjPg66nmeBXFoY3etou83EQv4LMt+L5RK/iWX/QvWvXMo/pJc7osBkrVDvoBO5215nlq/52RUrEPZi9VY5VaGyl1UCnlGkvZvkqpg+YV4dC7NuR1ba9SqUjeMzKVSnvdt6YzuY1KVS7E7FjpTqPQhb7aCxwJQyGhPyQMhYT+kDAUEvpDwlCaTLhZZ9+Okj1Oro3o1m3VXMJ48W1Hc7PLD5TxfYVWc7dVYwnNrEJXv/TN7Kq1ciI2lnBdravdWeEgk4qt3ptPOLAdmQ6/k5+Q7lW1so8sa7VqKmEidZOSJnYIeeg8YL/2KBtWumjVVEJ7kpa2kbEddxRJvphLS1vNj3v9OW81lVD6+lTaRoasp8725MuFeY3sNT9vtTvhmoRXkTAUEl5DwutIGAoJr/ldCeVzz+t5K/Q9zeddm/2KdFSrqz9gtkki8xSWyQe5d0z7SYnpca+9sy2tsrJGdq/dectOMjskvZAhN1U+zYc37QXKZ6p+ag1vGuRL9mjfdC5XgBmZ8dPp2NkuSwsq9in10Epqn/7g/1nMxxSWz5ExZlQwqGbkodWxdrTJL5ad74B2Eo3SdJYyW9uXspGTuqbtCXj6d5e/CddiR9S0p7L92510x+/UyK3/Q94iku74nXh2kEN6PeJt5M7R76wlOS3KR//0yOjkwusR5c750esRbyPvXfdej0hCbSSsj4TaSFgfCbWRsD4SaiNhfSTURsL6SKgtTMK01xrbufeEVScgavKbsB1fqxX5TVhlQq82nsMfJIzaI1BCr0e8TUrC2tqW8Om/T5h5TzhpWcJdmIR37eH/OmzPVJpPvOPXo7/wVbm114T53IBWmRi/CTv5slR2bttMpgzF9s4pMcFXwjL2d0dRLBOGZjZZ/rjnfGcyBTKfGGqk8DhUHYedV5o/YZJwWLL7rUgYAAk9I2EATSS0r9eRakK7PqPRSuhQS/hJOaHGjNO+bsKLhUtD/S7A1SuWDL1S66pYTmP5tLhYMvi6yQN3mWadhRpjd8HpBpYzBAAAAAAAAAAAAAAAAAAAAAAAAADU8xcW4UeKXbx+dAAAAABJRU5ErkJggg==" alt="bed icon">2 Beds</li>
+                        <li><img src="data:image/png;base64,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" alt="bath icon">1 Bath</li>
+                        <li><img src="data:image/png;base64,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" alt="balcony icon">1 Balcony</li>
+                        <li><img src="data:image/jpeg;base64,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" alt="almirah icon">Semi-Furnished</li>
+                    </ul>
+                </div>
+                <div class="details">
+                    <div class="detail1"><h5>Carpet Area</h5><p>175 Sqft</p></div>
+                    <div class="detail1"><h5>Floor</h5><p>Ground(Out of 1)</p></div>
+                    <div class="detail1"><h5>Furnished Status</h5><p>Semi-Furnished</p></div>
+                    <div class="detail1"><h5>Age of Construction</h5><p>Less than 5 Years</p></div>
+                    <div class="detail1"><h5>Status</h5><p>Immediately</p></div>
+                    <div class="detail1"><h5>Additional Rooms</h5><p>1 Store Room</p></div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div class="boxs2 bg-white m-auto" id="boxs2">
+        <h3>More Details</h3>
+        <p><span style="color: grey;">Ratings:</span><div class="Stars" style="--rating: 3.4;"></div></p>
+        <p><span style="color: grey;">Rental Values</span> &emsp; Rs. 8000</p>
+        <p><span style="color: grey;">Security Deposit</span> &emsp; Rs. 8000</p>
+        <p><span style="color: grey;">Address</span> &emsp; gagan vihar phase 2, Dhakansu Majra, Rajpura, Punjab</p>
+        <p><span style="color: grey;">Landmark</span> &emsp; near gagan chownk bypass</p>
+        <p><span style="color: grey;">Furnishing</span> &emsp; Semi-Furnished</p>
+        <p><span style="color: grey;">Carpet Area</span> &emsp; 175 Sqft</p>
+        <p><span style="color: grey;">Floor</span> &emsp; Ground(Out of 1)</p>
+        <p><span style="color: grey;">Car Parking</span> &emsp; 1 Covered, 1 Open</p>
+        <p><span style="color: grey;">Flooring</span> &emsp; Marble, Normal Tiles/Kotah Stone</p>
+        <p><span style="color: grey;">Overlooking</span> &emsp; Garden/Park, Main Road</p>
+    </div>
+    <div class="boxs2 bg-white m-auto">
+        <h3>Agent Details</h3>
+        <div class="bx1 d-flex flex-row">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUuR6lY1HPFS4Q_R2A5r70ECdchXmR_n1b8g&s" alt="" height="150px" width="150px">
+            </div>
+            <div>
+                <div>
+                    <p><strong>Jaswinder Kaur</strong>    |    4000+ Buyers Served</p>
+                    <p>Deep Singh Colony Estate</p>
+                </div>
+                <hr>
+                <div class="bx1 d-flex flex-row">
+                    <div>
+                        <p style="color: grey;">Operating In</p>
+                        <p><strong>H-102, Gagan Market, Behind Rajpura Station, Rajpura......, New Delhi, Delhi NCR, India</strong></p>
+                    </div>
+                    <div class="bx2 ms-3 p-1">
+                        <p style="color: grey;">Operating Since</p>
+                        <p><strong>2012</strong></p>
+                    </div>
+                    <div class="bx2 ms-3 p-1">
+                        <p style="color: grey;">Properties for Sale</p>
+                        <p><strong>32</strong></p>
+                    </div>
+                    <div class="bx2 ms-3 p-1">
+                        <p style="color: grey;">Properties for Rent</p>
+                        <p><strong>12</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="boxs2">
+        <p><strong>Disclaimer:</strong> Magicbricks has endeavoured to ascertain the requirement of RERA registration. However, the advertiser claims that there is no requirement for such registration.</p>
+        <center><button class="btn btn-danger fs-5" style="border-radius: 20px;"><a href="contact.html">Contact US</a></button></center>    
+    </div>
+
+    <footer>
+        <!-- Footer -->
+                <div class="footer">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="terms.html">Terms & Condition</a></li>
+                            <li><a href="review.html">Testimonials</a></li>
+                            <li>Sitemap</li>
+                            <li><a href="FAQS.html">FAQs</a></li>
+                        </ul>
+                    </div>    
+                <div class="footer-tags">
+                    <ul>
+                        <li><a href="https://www.facebook.com/TheRentalHub"><i class="bi bi-facebook footer-icons"></i></a></li>
+                        <li><a href="https://x.com/rentalhub_"><i class="bi bi-twitter footer-icons"></i></a></li>
+                        <li><a href="https://www.instagram.com/rentalhub/"><i class="bi bi-instagram footer-icons"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/rentalhub-llc/"><i class="bi bi-linkedin footer-icons"></i></a></li>
+                        <li><a href="https://www.youtube.com/@the_rental_hub_official"><i class="bi bi-youtube footer-icons"></i></a></li>
+                    </ul>
+                    <p>&copy 2023-24 RentalHub Technologies Solution Pvt. Ltd.</p>
+                </div>
+            </div>
+            </footer>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentalHub</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+<!-- NavBar -->
+    <header>
+        <nav class="nav-bar">
+            <img src="logo.png" alt="Logo"><h2>RentalHub</h2>
+            <ul id="down-navbar">
+                <li><i></i>Pay Rent</li>
+                <li><button id="property-owner">For Property Owners</button></li>
+                <li><a href="login.html">Log in/Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+<!-- Search-Bar -->
+        <div class="search-content">
+            <h2 >Find a home you'll love</h2>
+            <div class="banner">
+                <div class="banner-item" style="width: 212px;">
+                    <img src="banner agreement.svg" alt="Rental Agreement">
+                    <p id="banner-agreement">Rental Agreement</p>
+                </div>
+                <div class="banner-item" style="padding-right: 30px; width: 200px;">
+                    <img src="truck.svg" alt="Next Day Delivery" >
+                    <p>Next Day Delivery</p>
+                </div>
+            </div>
+           
+            <div class="search-bar">
+                <i class="bi bi-geo-alt-fill"></i><input list="location" id="locations" class="location" placeholder="Rajpura">
+                <datalist id="location">
+                    <option>Rajpura</option>
+                </datalist>
+                <i class="bi bi-house-door-fill"></i><input list="BHK-Types" class="BHK_Type" placeholder="BHK Type" id="BHK-Type">
+                <datalist id="BHK-Types">
+                    <option>1 BHK</option>
+                </datalist>
+                <!-- <i class="bi bi-calendar-fill"></i><input list="Availability" class="Availability" placeholder="Availability">
+                <datalist id="Availability">
+                    <option>Immediate</option>
+                    <option>Within 15 Days</option>
+                    <option>Within 30 Days</option>
+                    <option>After 30 Days</option>
+                </datalist> -->
+                <button class="search-btn" onclick="search()"><i class="bi bi-search" style="margin-right: 5px;"></i>Search</button>
+            </div>
+        </div>
+        <!-- Hidden Section for Cards -->
+         <div class="rajpura-cards" id="rajpura-cards">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card rounded-4 border-3 text-white" style="width: 18rem; background-color: black;">
+                            <img src="https://th.bing.com/th/id/OIP.odSm-Lqc9Au-acbkdUboowHaE-?rs=1&pid=ImgDetMain" class="card-img-top rounded-3" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Ratings: 
+                                    <div class="Stars" style="--rating: 2.6;"></div>
+                                </h5>
+                                <h6>
+                                    <i class="fa-solid fa-location-dot"></i> Baba Deep Singh Colony
+                                </h6>
+                                <p class="card-text">
+                                    Rs. 10000/mo  | 2 months Advance<br>
+                                    Low Maintanance | Semi-Furnished | Bachelor/Family<br>   
+                                </p>
+                                <a href="House1.html" class="btn btn-primary m-auto d-block">View More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card rounded-4 border-3 text-white" style="width: 18rem; background-color: black;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRbcrj53mGyk-u4JwrIb6z1RBAeCpxR78gfQ&s" class="card-img-top rounded-3" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Ratings: 
+                                    <div class="Stars" style="--rating: 3.4;"></div>
+                                </h5>
+                                <h6>
+                                    <i class="fa-solid fa-location-dot"></i> Dhakansu Majra, Rajpura
+                                </h6>
+                                <p class="card-text">
+                                    Rs. 8000/mo  | 2 months Advance<br>
+                                    Balcony | Semi-Furnished | Bachelor/Family<br>   
+                                </p>
+                                <a href="house2.html" class="btn btn-primary m-auto d-block">View More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card rounded-4 border-3 text-white" style="width: 18rem; background-color: black;">
+                            <img src="https://www.thehousedesigners.com/images/plans/URD/bulk/6583/the-destination-front-rendering.jpg" class="card-img-top rounded-3" alt="..." height="188px">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Ratings: 
+                                    <div class="Stars" style="--rating: 3;"></div>
+                                </h5>
+                                <h6>
+                                    <i class="fa-solid fa-location-dot"></i> Deep Singh Colony
+                                </h6>
+                                <p class="card-text">
+                                    Rs. 7000/mo  | 2 months Advance<br>
+                                    Car-Parking | Fully-Furnished | Bachelor/Family<br>   
+                                </p>
+                                <a href="house3.html" class="btn btn-primary m-auto d-block">View More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="card rounded-4 border-3 text-white" style="width: 18rem; background-color: black;">
+                            <img src="https://media.istockphoto.com/id/1026205392/photo/beautiful-luxury-home-exterior-at-twilight.jpg?s=612x612&w=0&k=20&c=HOCqYY0noIVxnp5uQf1MJJEVpsH_d4WtVQ6-OwVoeDo=" class="card-img-top rounded-3" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    Ratings: 
+                                    <div class="Stars" style="--rating: 4;"></div>
+                                </h5>
+                                <h6>
+                                    <i class="fa-solid fa-location-dot"></i> NH1, Rajpura
+                                </h6>
+                                <p class="card-text">
+                                    Rs. 10000/mo  | 2 months Advance<br>
+                                    2-Balcony | Fully-Furnished | Bachelor/Family<br>   
+                                </p>
+                                <a href="house4.html" class="btn btn-primary m-auto d-block">View More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+<!-- Services -->
+        <section class="service-section">
+            <div class="service-heading">
+                <h2><span>Services</span></h2>
+            </div>
+            <div class="services">
+                <div class="service">
+                    <img src="Packers & Movers.png" alt="Packers & Movers">
+                    <h3>Packers & Movers</h3>
+                </div>
+                <div class="service">
+                    <img src="Rental Agreement.png" alt="Rental Agreement">
+                    <h3>Rental Agreement</h3>
+                </div>
+                <div class="service">
+                    <img src="ClicknEarn.svg" alt="Click & Earn">
+                    <h3>Click & Earn</h3>
+                </div>
+                <div class="service">
+                    <img src="Painting.png" alt="Painting & Cleaning">
+                    <h3>Painting & Cleaning</h3>
+                </div>
+                <div class="service">
+                    <img src="NRIs.png" alt="NoBroker for NRIs">
+                    <h3>NoBroker for NRIs</h3>
+                </div>
+            </div>
+        </section>
+<!-- Features -->
+        <section class="why-use">
+            <div class="features-heading" style="width: 100%;">
+                <h2><span>Why Use RentalHub</span></h2>
+            </div>
+            <div class="features">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="avoid-broker.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="#">Avoid Brokers</a></h5>
+                      <p class="card-text">We directly connect you to verified owners to save brokerage</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="free-listing.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="3">Free Listing</a></h5>
+                      <p class="card-text">Easy listing process. Also using WhatsApp</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="shortlisted.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="#">Shortlist without Visit</a></h5>
+                      <p class="card-text">Extensive Information makes it easy</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="rental-feature.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="#">Rental Agreement</a></h5>
+                      <p class="card-text">Assistance in creating Rental agreement & Paperwork</p>
+                      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                  </div>    
+            </div>
+        </section>
+<!-- Enquiry -->
+        <section class="section-enquiry">
+            <h2 style="margin-bottom: 15px;">RentalHub Business Assist Plan For Builders</h2>
+            <div class="enquires">
+                <div class="enquiry">
+                    <img src="https://lirp.cdn-website.com/4409b412/dms3rep/multi/opt/c-p-m_for_rent-1920w.jpg" 
+                    alt="For Rent">
+                </div>
+                <div class="enquiry" id="enquiry-info">
+                    <div style="margin-bottom: 20px; font-size: larger;">Get in touch with us to <br>Rent Your Projects</div>
+                    <button><a href="contact.html">Enquiry Now</a></button>
+                    <hr>
+                    <div>For Builders Enquires: +91 762861 42623</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+<!-- Footer -->
+        <div class="footer">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="terms.html">Terms & Condition</a></li>
+                    <li><a href="review.html">Testimonials</a></li>
+                    <li>Sitemap</li>
+                    <li><a href="FAQS.html">FAQs</a></li>
+                </ul>
+            </div>    
+        <div class="footer-tags">
+            <ul>
+                <li><a href="https://www.facebook.com/TheRentalHub"><i class="bi bi-facebook footer-icons"></i></a></li>
+                <li><a href="https://x.com/rentalhub_"><i class="bi bi-twitter footer-icons"></i></a></li>
+                <li><a href="https://www.instagram.com/rentalhub/"><i class="bi bi-instagram footer-icons"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/rentalhub-llc/"><i class="bi bi-linkedin footer-icons"></i></a></li>
+                <li><a href="https://www.youtube.com/@the_rental_hub_official"><i class="bi bi-youtube footer-icons"></i></a></li>
+            </ul>
+            <p>&copy 2023-24 RentalHub Technologies Solution Pvt. Ltd.</p>
+        </div>
+    </div>
+    </footer>
+
+    <script>
+        let showHiddenSection = false;
+        let inputField = document.getElementById('locations');
+        let inputField1 = document.getElementById('BHK-Type');
+        let hiddenSection = document.getElementById('rajpura-cards');
+
+        function search(){
+            if (inputField.value.trim() !== '' && inputField1.value.trim() !== '') {
+                showHiddenSection = true;
+                hiddenSection.style.display = 'block'; // show the hidden section
+            } else {
+                hiddenSection.style.display = 'none'; // hide the hidden section
+            }
+        }
+
+        // Add event listeners to input fields to hide hidden section instantly
+        inputField.addEventListener('input', function(){
+            if (!showHiddenSection) return; // don't hide if search button hasn't been clicked
+            if (inputField.value.trim() === '' || inputField1.value.trim() === '') {
+                hiddenSection.style.display = 'none'; // hide the hidden section
+            }
+        });
+
+        inputField1.addEventListener('input', function(){
+            if (!showHiddenSection) return; // don't hide if search button hasn't been clicked
+            if (inputField.value.trim() === '' || inputField1.value.trim() === '') {
+                hiddenSection.style.display = 'none'; // hide the hidden section
+            }
+        });
+    </script>
+</body>
+</html>
